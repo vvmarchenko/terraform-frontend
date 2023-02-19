@@ -50,5 +50,20 @@ variable "max_ttl" {
   default = 86400
 }
 
+variable "environment_tag" {
+  type = string
+  description = "The global tag for your project"
+  default = "production"
+}
 
+variable "owner_tag" {
+  type = string
+  description = "The owner tag who create this project"
+}
+
+
+variable "project_tag" {
+  type = string
+  description = "The project tag name"
+}
 
