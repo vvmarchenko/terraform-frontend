@@ -2,6 +2,13 @@
 provider "aws" {
   profile = var.profile_name
   region = var.region_name
+  default_tags {
+    tags = {
+      Environment = var.environment_tag
+      Owner       = var.owner_tag
+      Project     = var.project_tag
+    }
+  }
 }
 
 #The resource block creates an S3 bucket with a private access.
