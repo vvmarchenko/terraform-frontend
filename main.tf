@@ -6,3 +6,6 @@ module "frontend-conduit" {
   project_tag = "conduit"
 }
 
+output "cloudfront_domain_name" {
+  value = module.frontend-conduit.cloudfront_domain_name
+}
