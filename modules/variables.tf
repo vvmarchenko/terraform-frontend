@@ -67,3 +67,12 @@ variable "project_tag" {
   description = "The project tag name"
 }
 
+variable "origin_access_control_name" {
+  type = string
+  description = "The name for origin access control"
+  default = "Access control for project"
+}
+
+
+
+
